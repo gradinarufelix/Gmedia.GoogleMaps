@@ -4,10 +4,9 @@
     "name": "gmedia/googlemaps",
     "require": {
         "typo3/flow": "*",
-        "typo/neos": ">2.3.7",
+        "typo/neos": "*",
         "gmedia/coresite": "*"
     },
-    "license": "GPL-3.0+",
 	"authors": [
 		{
 			"name": "G-Media",
