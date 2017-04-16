@@ -1,7 +1,6 @@
 {
     "description": "Google Maps Content Node Type, powered by G-Media",
     "type": "neos-package",
-    "version": "1.0.0-dev",
     "name": "gmedia/googlemaps",
     "require": {
         "typo3/flow": "*",
