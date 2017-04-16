@@ -4,7 +4,7 @@
     "name": "gmedia/googlemaps",
     "require": {
         "typo3/flow": "*",
-        "typo/neos": "*",
+        "typo3/neos": ">2.3.7",
         "gmedia/coresite": "*"
     },
 	"authors": [
