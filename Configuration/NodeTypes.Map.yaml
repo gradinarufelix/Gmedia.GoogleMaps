@@ -1,0 +1,47 @@
+'Gmedia.GoogleMaps:MapElement':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  ui:
+    label: 'Map'
+    group: 'gmediasite'
+    icon: 'icon-map'
+    inlineEditable: true
+    inspector:
+      groups:
+        location:
+          label: 'Location'
+          icon: 'icon-pointer'
+          position: 1
+  properties:
+    lat:
+      type: string
+      defaultValue: 'e.g. 23.593'
+      ui:
+        label: 'Latitude'
+        reloadPageIfChanged: TRUE
+        inspector:
+          group: 'location'
+    long:
+      type: string
+      defaultValue: 'e.g. 23.593'
+      ui:
+        label: 'Longitude'
+        reloadPageIfChanged: TRUE
+        inspector:
+          group: 'location'
+    zoom:
+      type: string
+      defaultValue: '8'
+      ui:
+        label: 'Zoom'
+        reloadPageIfChanged: TRUE
+        inspector:
+          group: 'location'
+    height:
+      type: string
+      defaultValue: '500px'
+      ui:
+        label: 'Height'
+        reloadPageIfChanged: TRUE
+        inspector:
+          group: 'location'

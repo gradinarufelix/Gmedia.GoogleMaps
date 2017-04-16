@@ -1,0 +1,28 @@
+{
+    "description": "Google Maps Content Node Type, powered by G-Media",
+    "type": "neos-package",
+    "version": "1.0.0-dev",
+    "name": "gmedia/googlemaps",
+    "require": {
+        "typo3/flow": "*",
+        "typo/neos": ">2.3.7",
+        "gmedia/coresite": "*"
+    },
+    "license": "GPL-3.0+",
+	"authors": [
+		{
+			"name": "G-Media",
+			"email": "felix@g-media.at"
+		}
+	],
+    "autoload": {
+        "psr-0": {
+            "Gmedia\\GoogleMaps": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Gmedia.GoogleMaps"
+        }
+    }
+}

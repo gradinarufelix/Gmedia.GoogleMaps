@@ -1,0 +1,10 @@
+TYPO3:
+  Neos:
+    typoScript:
+      autoInclude:
+        'Gmedia.GoogleMaps': TRUE
+        
+Gmedia:
+  GoogleMaps:
+    apiKeys:
+      google: "AIzaSyD5P6w4K2JP2_8RDoc4h75wZeeMwA4jPls"
