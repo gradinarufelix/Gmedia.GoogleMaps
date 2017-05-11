@@ -20,8 +20,10 @@ prototype(Gmedia.GoogleMaps:MapElement) < prototype(TYPO3.Neos:Content) {
 	script = TYPO3.TypoScript:Tag {
 		tagName = 'script'
 		@position = 'after googleMaps'
+		googleMapsJS = TYPO3.TypoScript:ResourceUri
+		googleMapsJS.path = 'resource://Gmedia.GmediaPage/Public/JavaScript/googlemaps.min.js' 
 		content = ${'
-			googleMaps.push ( function() {
+			head.load({googleMaps: "' + this.googleMapsJS + '"}, function() {
 				map = new google.maps.Map(document.getElementById("map-'+ q(node).property('_identifier') +'"), {
 					center: {lat: '+ q(node).property('lat') +', lng: '+ q(node).property('long') +'},
 					zoom: '+ q(node).property('zoom') +'
