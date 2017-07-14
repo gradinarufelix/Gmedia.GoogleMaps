@@ -1,11 +1,11 @@
-prototype(Gmedia.GoogleMaps:MapElement) < prototype(TYPO3.Neos:Content) {
+prototype(Gmedia.GoogleMaps:MapElement) < prototype(Neos.Neos:Content) {
 	identifier = ${q(node).identifier}
-	attributes = TYPO3.TypoScript:Attributes {
+	attributes = Neos.TypoScript:Attributes {
 		id = ${'map-' + q(node).property('_identifier')}
-		class = TYPO3.TypoScript:RawArray {
+		class = Neos.TypoScript:RawArray {
 			rootClass = 'gc-map'
 		}
-		style = TYPO3.TypoScript:RawArray {
+		style = Neos.TypoScript:RawArray {
 			height = Gmedia.CoreSite:Style {
 				property = 'height'
 				value = ${q(node).property('height')}
@@ -17,7 +17,7 @@ prototype(Gmedia.GoogleMaps:MapElement) < prototype(TYPO3.Neos:Content) {
 		}
 		
 	}
-	script = TYPO3.TypoScript:Tag {
+	script = Neos.TypoScript:Tag {
 		tagName = 'script'
 		@position = 'after googleMaps'
 		content = ${'

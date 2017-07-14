@@ -1,5 +1,5 @@
 prototype(Gmedia.CoreSite:Page) {
-	head.javascripts.googleMapsTop = TYPO3.TypoScript:Tag {
+	head.javascripts.googleMapsTop = Neos.TypoScript:Tag {
 		tagName = 'script'
 		content = ${'
 			var googleMaps = [];
@@ -10,9 +10,9 @@ prototype(Gmedia.CoreSite:Page) {
 			}
 		'}
 	}
-	body.javascripts.googleMapsBottom = TYPO3.TypoScript:Tag {
+	body.javascripts.googleMapsBottom = Neos.TypoScript:Tag {
 		tagName = 'script'
-		attributes = TYPO3.TypoScript:Attributes {
+		attributes = Neos.TypoScript:Attributes {
 			@allowEmpty = TRUE
 			src = ${'https://maps.googleapis.com/maps/api/js?key=' + Configuration.setting('Gmedia.CoreSite.apiKeys.google') + '&callback=initGoogleMaps'}
 		}
