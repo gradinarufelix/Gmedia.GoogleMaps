@@ -1,6 +1,6 @@
 TYPO3:
   Neos:
-    typoScript:
+    fusion:
       autoInclude:
         'Gmedia.GoogleMaps': TRUE
         
