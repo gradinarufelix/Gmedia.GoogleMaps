@@ -2,10 +2,9 @@
     "description": "Google Maps Content Node Type, powered by G-Media",
     "type": "neos-package",
     "name": "gmedia/googlemaps",
+    "version":"2.0.0",
     "require": {
-        "typo3/flow": "*",
-        "typo3/neos": ">2.3.7",
-        "gmedia/coresite": "*"
+        "gmedia/coresite": "^2.0"
     },
 	"authors": [
 		{

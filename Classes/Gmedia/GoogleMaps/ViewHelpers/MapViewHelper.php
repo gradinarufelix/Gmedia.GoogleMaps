@@ -2,9 +2,9 @@
 
 namespace Gmedia\GoogleMaps\ViewHelpers;
 
-use TYPO3\Flow\Utility\Algorithms;
+use Neos\Flow\Utility\Algorithms;
 
-class MapViewHelper extends \TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper {
+class MapViewHelper extends \Neos\Fluid\Core\ViewHelper\AbstractViewHelper {
 	
 	/**
      * @var boolean
@@ -35,7 +35,7 @@ class MapViewHelper extends \TYPO3\Fluid\Core\ViewHelper\AbstractViewHelper {
      * @param string $leadClass class of the lead text
      * @param string $buttons html of the content section
      * @return string rendered html
-     * @throws \TYPO3\Fluid\Core\ViewHelper\Exception
+     * @throws \Neos\Fluid\Core\ViewHelper\Exception
      */
     public function render($lat = 0, $long = 0, $zoom = 8, $height = "500px") {
 	    	// Create Object ID
