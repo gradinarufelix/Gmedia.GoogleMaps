@@ -4,7 +4,7 @@ namespace Gmedia\GoogleMaps\ViewHelpers;
 
 use Neos\Flow\Utility\Algorithms;
 
-class MapViewHelper extends \Neos\Fluid\Core\ViewHelper\AbstractViewHelper {
+class MapViewHelper extends \Neos\FluidAdaptor\Core\ViewHelper\AbstractViewHelper {
 	
 	/**
      * @var boolean
@@ -35,7 +35,7 @@ class MapViewHelper extends \Neos\Fluid\Core\ViewHelper\AbstractViewHelper {
      * @param string $leadClass class of the lead text
      * @param string $buttons html of the content section
      * @return string rendered html
-     * @throws \Neos\Fluid\Core\ViewHelper\Exception
+     * @throws \Neos\FluidAdaptor\Core\ViewHelper\Exception
      */
     public function render($lat = 0, $long = 0, $zoom = 8, $height = "500px") {
 	    	// Create Object ID
