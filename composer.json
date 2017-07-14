@@ -13,8 +13,8 @@
 		}
 	],
     "autoload": {
-        "psr-0": {
-            "Gmedia\\GoogleMaps": "Classes/"
+        "psr-4": {
+            "Gmedia\\GoogleMaps\\": "Classes"
         }
     },
     "extra": {
