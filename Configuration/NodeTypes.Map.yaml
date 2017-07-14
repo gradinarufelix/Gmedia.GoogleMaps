@@ -1,6 +1,6 @@
 'Gmedia.GoogleMaps:MapElement':
   superTypes:
-    'TYPO3.Neos:Content': TRUE
+    'Neos.Neos:Content': TRUE
   ui:
     label: 'Map'
     group: 'gmediasite'
