@@ -1,11 +1,11 @@
 prototype(Gmedia.GoogleMaps:MapElement) < prototype(Neos.Neos:Content) {
 	identifier = ${q(node).identifier}
-	attributes = Neos.TypoScript:Attributes {
+	attributes = Neos.Fusion:Attributes {
 		id = ${'map-' + q(node).property('_identifier')}
-		class = Neos.TypoScript:RawArray {
+		class = Neos.Fusion:RawArray {
 			rootClass = 'gc-map'
 		}
-		style = Neos.TypoScript:RawArray {
+		style = Neos.Fusion:RawArray {
 			height = Gmedia.CoreSite:Style {
 				property = 'height'
 				value = ${q(node).property('height')}
@@ -17,10 +17,10 @@ prototype(Gmedia.GoogleMaps:MapElement) < prototype(Neos.Neos:Content) {
 		}
 		
 	}
-	script = Neos.TypoScript:Tag {
+	script = Neos.Fusion:Tag {
 		tagName = 'script'
 		@position = 'after googleMaps'
-		googleMapsJS = TYPO3.TypoScript:ResourceUri
+		googleMapsJS = Neos.Fusion:ResourceUri
 		googleMapsJS.path = 'resource://Gmedia.GoogleMaps/Public/JavaScript/googlemaps.min.js' 
 		content = ${'
 			head.load({googleMaps: "' + this.googleMapsJS + '"}, function() {
