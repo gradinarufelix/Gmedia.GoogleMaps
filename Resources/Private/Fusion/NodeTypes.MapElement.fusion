@@ -1,4 +1,5 @@
 prototype(Gmedia.GoogleMaps:MapElement) < prototype(Neos.Neos:Content) {
+	templatePath = 'resource://Gmedia.GoogleMaps/Private/Templates/NodeTypes/MapElement.html'
 	identifier = ${q(node).identifier}
 	attributes = Neos.Fusion:Attributes {
 		id = ${'map-' + q(node).property('_identifier')}
@@ -19,7 +20,6 @@ prototype(Gmedia.GoogleMaps:MapElement) < prototype(Neos.Neos:Content) {
 	}
 	script = Neos.Fusion:Tag {
 		tagName = 'script'
-		@position = 'after googleMaps'
 		googleMapsJS = Neos.Fusion:ResourceUri
 		googleMapsJS.path = 'resource://Gmedia.GoogleMaps/Public/JavaScript/googlemaps.min.js' 
 		content = ${'

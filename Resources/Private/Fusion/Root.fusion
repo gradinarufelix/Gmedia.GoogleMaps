@@ -1,2 +1,2 @@
-include: Root.JavaScript.fusion
+#include: Root.JavaScript.fusion
 include: NodeTypes.MapElement.fusion
