@@ -2,9 +2,9 @@
     "description": "Google Maps Content Node Type, powered by G-Media",
     "type": "neos-package",
     "name": "gmedia/googlemaps",
-    "version":"2.0.4",
+    "version":"2.0.5",
     "require": {
-        "gmedia/coresite": "^2.0"
+        "gmedia/coresite": "~2.0"
     },
 	"authors": [
 		{
@@ -12,11 +12,6 @@
 			"email": "felix@g-media.at"
 		}
 	],
-    "autoload": {
-        "psr-4": {
-            "Gmedia\\GoogleMaps\\": "Classes"
-        }
-    },
     "extra": {
         "neos": {
             "package-key": "Gmedia.GoogleMaps"
